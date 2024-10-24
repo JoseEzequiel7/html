@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: 1px solid red;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        div > div {
+            padding: 20px;
+        }
+
+        .end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .between {
+            justify-content: space-between;
+        }
+
+        .around {
+            justify-content: space-around;
+        }
+
+        .evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+
+</head>
+<body>
+    <h1><center>justify-content : alinhar elementos</h1>
+
+    <div class="container">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+    </div>
+    
+    <div class="container end">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+    </div>
+
+    <div class="container center">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+    </div>
+
+    <div class="container between">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+    </div>
+    
+    <div class="container around">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>texto</div>
+    </div>
+
+    <div class="container evenly">
+        <div>Texto</div>
+        <div>Texto</div>
+        <div>Texto</div>
+    </div>
+</body>
+</html>
