@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 5px;
+    width: 50%;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+nav{
+    display:flex ;
+    align-items: flex-end;
+    height: 1005;
+}
+
+ul {
+    list-style: none;
+}
+
+.redes {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     position: relative;
+     top: 55%;
+}
+
+.redes ul {
+    display: flex;
+}
+
+.redes ul a {
+    display: block;
+    padding: 10px;
+}
