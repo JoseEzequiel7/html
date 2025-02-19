@@ -1,0 +1,89 @@
+body {
+    margin: 0; /* Remove a margem padrão ao redor do conteúdo da página.*/
+    font-family: Arial, sans-serif; /*Define a fonte do corpo da página como Arial (ou uma fonte genérica sans-serif, caso não tenha Arial).*/
+    background-color: #121212; /*Define a cor de fundo da página como um tom escuro de cinza/pretinho.*/
+    color: white; /*Define a cor do texto para branco.*/
+}
+
+header {
+    display: flex; /*Usa Flexbox para o layout no header, permitindo que os itens dentro dele sejam alinhados facilmente.*/
+    justify-content: space-between; /*Coloca os elementos dentro do header de forma que haja um espaço máximo entre eles (logo e menu).*/
+    align-items: center; /*Alinha os itens verticalmente ao centro.*/
+    background-color: #202020; /*Define a cor de fundo do header como um tom de cinza escuro.*/
+    padding: 15px 30px; /*Adiciona espaçamento interno ao header, com 15px de padding vertical e 30px horizontal.*/
+}
+    
+nav {
+    display: flex; /*Aplica Flexbox no nav, permitindo a distribuição dos itens dentro dele.*/
+    gap: 2px; /*Define o espaço entre os itens do menu (pequeno espaço de 2px entre os links).*/
+    flex: 2; /*Define que o nav deve ocupar 2/3 do espaço disponível, enquanto outros elementos no header (como a logo) podem ocupar o restante.*/
+}
+    
+nav ul {
+    list-style: none; /*Remove os marcadores de lista (bullet points) do menu.*/
+    display: flex; /*Aplica Flexbox à lista de itens (ul), colocando-os em linha.*/
+    gap: 20px; /*Define o espaço de 20px entre cada item do menu.*/
+}
+    
+nav ul li a {
+    color: white; /*Define a cor do texto do link como branco.*/
+    text-decoration: none; /*Remove o sublinhado padrão dos links.*/
+}
+
+.boasvindas {
+    height: 200px; /*Define a altura da seção de boas-vindas.*/
+    display: flex; /*Aplica Flexbox para o alinhamento e centralização do conteúdo.*/
+    align-items: center; /*Centraliza verticalmente o conteúdo dentro da seção.*/
+    justify-content: center; /*Centraliza horizontalmente o conteúdo.*/
+    text-align: center; /*Alinha o texto dentro da seção ao centro.*/
+}
+
+.games-list {
+    padding: 20px; /*Adiciona um espaçamento interno de 20px dentro da seção de lista de jogos.*/
+}
+
+.games {
+    display: flex; /*Aplica Flexbox à lista de jogos, organizando-os horizontalmente.*/
+    gap: 20px; /*Adiciona um espaçamento de 20px entre as cartas de jogos.*/
+}
+
+.game-card {
+    background-color: #333; /*Define a cor de fundo da carta de jogo como um tom de cinza escuro.*/
+    padding: 20px; /*Adiciona 20px de espaçamento interno nas cartas de jogo.*/
+    text-align: center; /*Centraliza o texto dentro da carta.*/
+    flex: 1; /*Faz as cartas de jogo se ajustarem igualmente ao espaço disponível.*/
+}
+
+.game-card img {
+    width: 50%; /*Define que a imagem ocupará 50% da largura da carta.*/
+    transition: transform 0.3s ease-in-out; /*Define uma transição suave ao aplicar transformações na imagem (para animações de hover).*/
+}
+
+.game-card img:hover {
+    transform: scale(1.1); /*Aumenta a imagem em 10% quando o mouse passa sobre ela.*/
+}
+
+.pagination {
+    text-align: center; /*Centraliza o conteúdo da paginação.*/
+    padding: 20px; /*Adiciona espaçamento interno ao redor da área de paginação.*/
+}
+
+.pagination button {
+    background-color: #333; /*Define a cor de fundo do botão como cinza escuro.*/
+    color: white; /*Define a cor do texto do botão como branco.*/
+    border: none; /*Remove a borda padrão do botão.*/
+    padding: 10px 15px; /*Define o espaçamento interno do botão.*/
+    margin: 5px; /*Adiciona uma margem de 5px ao redor do botão.*/
+    cursor: pointer; /*Muda o cursor para uma mãozinha quando o usuário passa o mouse sobre o botão.*/
+    font-size: 16px; /*Define o tamanho da fonte no botão.*/
+}
+
+button:hover {
+    background-color: lightblue; /* Muda a cor de fundo do botão para azul claro quando o mouse passa sobre ele.*/
+}
+
+footer {
+    text-align: center; /*Centraliza o texto dentro do rodapé.*/
+    padding: 10px; /*Adiciona espaçamento interno ao redor do rodapé.*/
+    background-color: #202020; /*Define a cor de fundo do rodapé como cinza escuro.*/
+}
